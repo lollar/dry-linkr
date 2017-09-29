@@ -1,8 +1,7 @@
 module Resources
   class ManagedLinks
     def self.post(params)
-      puts params
-      { success: true, message: "hey mike!" }
+      ManagedLinks::Create.call(params).to_hash
     end
   end
 end
