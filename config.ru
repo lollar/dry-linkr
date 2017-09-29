@@ -1,6 +1,7 @@
 require "roda"
 require_relative './app/resources/managed_links'
 require_relative './app/resources/redirects'
+require_relative './database/migrate'
 
 class V1 < Roda
   plugin :json, classes: [Hash]
